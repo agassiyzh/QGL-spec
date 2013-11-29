@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/agassiyzh/AWIconSheet"
   s.license      = { :type => 'MIT', :file => 'README.md' }
   s.author       = { "Appwill" => "" }
-  s.source       = { :git => "https://github.com/nickcheng/AWIconSheet.git",
+  s.source       = { :git => "https://github.com/agassiyzh/AWIconSheet.git",
                      :tag => "1.0.0" }
   s.platform     = :ios, '5.0'
   s.source_files = 'AWIconSheet/AWActionSheet.*'
