@@ -40,18 +40,18 @@ Pod::Spec.new do |s|
   s.public_header_files = "*/IMKit/Headers/*.h"
   s.source_files = "*/IMKit/Headers/*.h"
 
-  s.vendored_libraries = "*/IMKit/*.a"
+  #s.vendored_libraries = "*/IMKit/*.a"
 
   s.resources = "*/IMKit/*.bundle"
 
-  s.preserve_paths = "*/IMKit"
+  s.preserve_paths = "*/IMKit/*.a"
 
   s.framework = 'AudioToolbox', 'AVFoundation', 'CFNetwork', 'CoreAudio', 'CoreGraphics', 'CoreImage', 'CoreLocation', 'CoreMedia', 'CoreTelephony', 'CoreVideo', 'Foundation', 'MapKit', 'OpenGLES', 'QuartzCore', 'SystemConfiguration', 'UIKit'
 
   s.requires_arc = true
 
   s.xcconfig = {
-      :LIBRARY_SEARCH_PATHS => "$(PODS_ROOT)/RongCloudIMKit/**"
+      :LIBRARY_SEARCH_PATHS => "\"$(PODS_ROOT)/RongCloudIMKit/**\""
   }
 
 end
